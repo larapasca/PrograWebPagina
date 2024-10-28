@@ -1,0 +1,465 @@
+*{
+    margin:0
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    font-size: 15px;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    height: 100%;
+    color: white;
+    font-family: "Sen", sans-serif;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-size: 20px;
+    color: rgb(166, 36, 36);
+}
+
+.menu-container{
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 60px;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+.profile-text-container{
+    margin: 0 40px;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle{
+    width: 45px;
+    height: 25px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    left:-5%;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    width: 22px;
+    height: 22px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container{
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+    width: 100%;
+    /* overflow-x: hidden;  */
+}
+
+.featured-content{
+    height: 50vh;
+    padding: 50px;
+}
+
+
+.featured-title{
+    width: 200px;
+}
+
+.featured-desc{
+    max-width: 500px;
+    color: lightgray;
+    margin: 30px 0;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 4; 
+}
+
+.featured-button{
+    background-color: rgb(166, 36, 36);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.featured-button:hover {
+    background-color: rgb(200, 50, 50); 
+    transform: scale(1.05); 
+    opacity: 1; 
+}
+
+.movie-list-container{
+    padding: 0 20px;
+}
+
+.movie-list-title{
+    padding: 0;
+}
+
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.movie-list{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    height: 300px;
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item{
+    display: flex; 
+    flex-direction: column;
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.1;
+}
+
+.movie-list-item-img{
+    transition: all 0.5s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.movie-list-item-title{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    left: 55px;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.movie-list-item-desc{
+    padding: 15px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 40px;
+    width: 230px;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 3; 
+    max-height: 3.3em;
+    line-height: 1.5em; 
+}
+
+.movie-list-item-button{
+    padding: 10px;
+    background-color: rgb(166, 36, 36);
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 75%;
+    left: 50px;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.movie-list-item-button:hover {
+    background-color: rgb(200, 50, 50); 
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+    text-decoration: none;  
+}
+
+.movie-list-item-title.has-rating {
+    top: 30px; 
+}
+
+.movie-list-item-desc.has-rating {
+    top: 60px; 
+}
+
+.movie-list-item-button.has-rating {
+    top: 150px; 
+}
+
+.arrow{
+    font-size: 60px;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    color: lightgray;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.arrow.has-rating {
+    top: 95px; 
+}
+
+/* Modo día */
+.container.active{
+    background-color: white;
+}
+
+.movie-list-title.active{
+    color: black;
+}
+
+.movie-list-item-title.active{
+    color: black;
+}
+
+.movie-list-item-desc.active{
+    color: black;
+}
+
+.navbar-container.active{
+    background-color: whitesmoke;
+    color: black
+}
+
+.rating-container.active{
+    background-color: white;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+/* Pantalla otra */
+@media only screen and (max-width:750px){
+    .menu-container{
+        display: none;
+    }
+}
+
+
+/*Menu*/
+.menu-list-item a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: normal; 
+    transition: color 0.3s; 
+}
+
+.navbar-container.active .menu-list-item a {
+    color: black; 
+}
+
+.menu-list-item a:hover {
+    color: rgb(166, 36, 36); 
+}
+
+.menu-list-item.active a {
+    font-weight: bold; 
+    color: rgb(166, 36, 36); 
+}
+
+
+
+/* ESTRELLITAS RATING */
+
+.rating-container {
+    display: flex;
+    justify-content: center; 
+    background: #151515;
+    padding: 8px 5px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.rating-container .star-rating {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.star-rating i {
+    color: #e6e6e6;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.star-rating i.active {
+    color: gold;
+}
+
+
+/*  FORM */
+.mail-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(166, 36, 36);
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-popup {
+    background-color: #1e1e1e;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.contact-form-popup h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-form-popup label {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.contact-form-popup input[type="email"],
+.contact-form-popup textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+.contact-form-popup button[type="submit"],
+.contact-form-popup button[type="button"] {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.contact-form-popup button[type="submit"] {
+    background-color: rgb(166, 36, 36);
+    color: white;
+}
+
+.contact-form-popup button[type="submit"]:hover {
+    background-color: rgb(200, 50, 50);
+}
+
+.contact-form-popup button[type="button"] {
+    background-color: #555;
+    color: white;
+}
+
+.contact-form-popup button[type="button"]:hover {
+    background-color: #777;
+}
+
+.contact-form-overlay {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.contact-form-overlay.show {
+    display: flex;
+    opacity: 1;
+}
+

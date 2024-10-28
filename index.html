@@ -1,0 +1,450 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>My Movies</title>
+</head>
+
+<body>
+    <div class="navbar"> <!-- Barra de navegación separada de container -->
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">MisPelis</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"><a href="#">Inicio</a></li>
+                    <li class="menu-list-item"><a href="#recientes">Recientes</a></li>
+                    <li class="menu-list-item"><a href="#favoritas">Favoritas</a></li>
+                    <li class="menu-list-item"><a href="#watchlist">WatchList</a></li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <!-- <img class="profile-picture" src="img/miperfil.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Perfil</span>
+                    <i class="fas fa-caret-down"></i>
+                </div> -->
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container"> <!-- Contenedor principal del contenido -->
+            <div class="content-container">
+                <div class="featured-content"
+                    style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/Thesubstancepic.jpg');">
+                    <img class="featured-title" src="img/substanceTitulo.png" alt="">
+                    <p class="featured-desc">Elisabeth Sparkle, renowned for an aerobics show, faces a devastating blow on her 50th birthday as her boss fires her. Amid her distress, a laboratory offers her a substance which promises to transform her into an enhanced version of herself</p>
+                    <a href="https://letterboxd.com/film/the-substance/">
+                        <button class="featured-button">WATCH</button>
+                    </a>
+                </div>
+                <div class="movie-list-container">
+                    <h1 class="movie-list-title" id="recientes">Recientes</h1>
+                    <div class="movie-list-wrapper">
+                        <div class="movie-list">
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/beetlejuice2.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Beetlejuice Beetlejuice</span>
+                                <p class="movie-list-item-desc has-rating">Lydia's life soon gets turned upside down when her rebellious teenage daughter discovers a mysterious portal to the afterlife.</p>
+                                <a href="https://letterboxd.com/film/beetlejuice-beetlejuice/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="beetlejuice-beetlejuice">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img " src="img/longlegs.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Longlegs</span>
+                                <p class="movie-list-item-desc has-rating">FBI Agent Lee Harker is assigned to an unsolved serial killer case that takes an unexpected turn, revealing evidence of the occult.</p>
+                                <a href="https://letterboxd.com/film/longlegs/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="longlegs">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/satc2.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Sex and the City 2</span>
+                                <p class="movie-list-item-desc has-rating">Carrie, Miranda, Charlotte and Samantha are struggling in their personal and professional lives when the latter lands them an all-expenses-paid trip to Abu Dhabi where they meet Aidan, Carrie's ex.</p>
+                                <a href="https://letterboxd.com/film/sex-and-the-city-2/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="sex-and-the-city-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/satc.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Sex and the City</span>
+                                <p class="movie-list-item-desc has-rating">Carrie and Big decide to get married. But on their wedding day, Big develops cold feet after his lover's friend, Miranda, expresses the reality of marriage to him upon being frustrated by her husband.</p>
+                                <a href="https://letterboxd.com/film/sex-and-the-city/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="sex-and-the-city">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/coraline.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Coraline</span>
+                                <p class="movie-list-item-desc has-rating">An adventurous girl walks through a secret door in her new home and discovers a strangely idealized version of her frustrating home, but it has sinister secrets.</p>
+                                <a href="https://letterboxd.com/film/coraline/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="coraline">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/beetlejuice.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Beetlejuice</span>
+                                <p class="movie-list-item-desc has-rating">The spirits of a deceased couple are harassed by an unbearable family that has moved into their home, and hire a malicious spirit to drive them out.</p>
+                                <a href="https://letterboxd.com/film/beetlejuice/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="beetlejuice">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/b3.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Before Midnight</span>
+                                <p class="movie-list-item-desc has-rating">Jesse and Celine, a couple, visit Greece with their twin daughters on their friend's invitation. While on vacation, Jesse gets restless and starts questioning his life and relationship with Celine.</p>
+                                <a href="https://letterboxd.com/film/before-midnight/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="before-midnight">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/b2.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Before Sunset</span>
+                                <p class="movie-list-item-desc has-rating">Celine and Jesse, who met nine years ago in Vienna, cross paths again for a single day in Paris. Together, they try to find out what might have happened if they had acted on their feelings back then.</p>
+                                <a href="https://letterboxd.com/film/before-sunset/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="before-sunset">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/b1.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Before Sunrise</span>
+                                <p class="movie-list-item-desc has-rating">While travelling on a train in Europe, Jesse, an American man, meets Celine, a French woman. On his last day in Europe before returning to the US, he decides to spend his remaining hours with her.</p>
+                                <a href="https://letterboxd.com/film/before-sunrise/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="before-sunrise">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-right arrow has-rating"></i>
+                    </div>
+                </div>
+                <div class="movie-list-container">
+                    <h1 class="movie-list-title" id="favoritas">Favoritas Actuales</h1>
+                    <div class="movie-list-wrapper">
+                        <div class="movie-list">
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/tpobaw.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">The Perks of Being a Wallflower</span>
+                                <p class="movie-list-item-desc has-rating">Charlie, a 15-year-old introvert, enters high school and is nervous about his new life. When he befriends his seniors, he learns to cope with his friend's suicide and his tumultuous past.</p>
+                                <a href="https://letterboxd.com/film/the-perks-of-being-a-wallflower/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="the-perks-of-being-a-wallflower">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/dps.jpeg" alt="">
+                                <span class="movie-list-item-title has-rating">Dead Poets Society</span>
+                                <p class="movie-list-item-desc has-rating">A group of students in a highly conservative boarding school learn to rebel against the status quo and find deeper meaning in life with the help of their new poetry teacher.</p>
+                                <a href="https://letterboxd.com/film/dead-poets-society/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="dead-poets-society">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/mammamia.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Mamma Mia</span>
+                                <p class="movie-list-item-desc has-rating">As Sophie and her family are busy preparing for her wedding, she secretly invites three men, who were her mother's lovers in the past, with the hope that one of them is her father.</p>
+                                <a href="https://letterboxd.com/film/mamma-mia/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="mamma-mia">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/pp1.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Pitch Perfect</span>
+                                <p class="movie-list-item-desc has-rating">Beca, a college fresher, reluctantly joins an all-girls a cappella group and later infuses freshness into their repertoire. They then take on a male a cappella group in a competition.</p>
+                                <a href="https://letterboxd.com/film/pitch-perfect/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="pitch-perfect">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/pp2.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Pitch Perfect 2</span>
+                                <p class="movie-list-item-desc has-rating">After a scandalous performance at the Kennedy Centre, the disgraced Barden Bellas must win a world championship to recover their reputation.</p>
+                                <a href="https://letterboxd.com/film/pitch-perfect-2/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="pitch-perfect-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/bottoms.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Bottoms</span>
+                                <p class="movie-list-item-desc has-rating">Unpopular best friends PJ and Josie start a high school fight club to meet girls and lose their virginity. They soon find themselves in over their heads when the most popular students start beating each other up in the name of self-defense.</p>
+                                <a href="https://letterboxd.com/film/bottoms/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="bottoms">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/shiva.jpg" alt="">
+                                <span class="movie-list-item-title has-rating">Shiva Baby</span>
+                                <p class="movie-list-item-desc has-rating">While at a Jewish funeral service with her parents, a college student has an awkward encounter with her sugar daddy and her ex-girlfriend.</p>
+                                <a href="https://letterboxd.com/film/shiva-baby/" class="movie-list-item-button has-rating">Watch</a>
+                                <div class="rating-container">
+                                    <div class="star-rating" data-movie-id="shiva-baby">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-right arrow has-rating"></i>
+                    </div>
+                </div>
+                <div class="featured-content"
+                            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/getout.jpg'); 
+                            height: 50vh; 
+                            background-size: cover; 
+                            background-position: center; 
+                            padding: 50px;">
+                    <img class="featured-title" src="img/getout.png" alt="">
+                    <p class="featured-desc">Chris, an African-American man, decides to visit his Caucasian girlfriend's parents during a weekend getaway. Although they seem normal at first, he is not prepared to experience the horrors ahead.</p>
+                    <a href="https://letterboxd.com/film/get-out-2017/">
+                        <button class="featured-button">WATCH</button>
+                    </a>
+                </div>
+                <div class="movie-list-container">
+                    <h1 class="movie-list-title" id="watchlist">My WatchList</h1>
+                    <div class="movie-list-wrapper">
+                        <div class="movie-list">
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/dbh.jpg" alt="">
+                                <span class="movie-list-item-title">Death Becomes Her</span>
+                                <p class="movie-list-item-desc">Madeline, a Broadway actress, and Helen, an aspiring writer, are arch rivals and fall in love with the same man. They drink a potion to stay young, only to realize that they have become immortal.</p>
+                                <a href="https://letterboxd.com/film/death-becomes-her/" class="movie-list-item-button">Watch</a>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/woth.jpg" alt="">
+                                <span class="movie-list-item-title">Woman of the Hour</span>
+                                <p class="movie-list-item-desc">In 1970s Los Angeles, as a wave of murders makes headlines, a young woman aspiring to become an actress and a serial killer cross paths during an episode of a dating show.</p>
+                                <a href="https://letterboxd.com/film/woman-of-the-hour/" class="movie-list-item-button">Watch</a>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/licorice.jpg" alt="">
+                                <span class="movie-list-item-title">Licorice pizza</span>
+                                <p class="movie-list-item-desc">Alana Kane and Gary Valentine grow up, run around, and fall in love in California's San Fernando Valley in the 1970s.</p>
+                                <a href="https://letterboxd.com/film/licorice-pizza/" class="movie-list-item-button">Watch</a>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/wlit.jpg" alt="">
+                                <span class="movie-list-item-title">We live in time</span>
+                                <p class="movie-list-item-desc">Almut and Tobias are brought together by a surprise encounter that changes their lives. As they embark on a path challenged by the limits of time, they learn to cherish each moment of their unconventional love story.</p>
+                                <a href="https://letterboxd.com/film/we-live-in-time/" class="movie-list-item-button">Watch</a>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/tfd.jpg" alt="">
+                                <span class="movie-list-item-title">The french dispatch</span>
+                                <p class="movie-list-item-desc">After a magazine editor's death, the magazine's publication is to be shut after a farewell issue, as per his last wish. The farewell issue focuses on unique stories of the writers' careers.</p>
+                                <a href="https://letterboxd.com/film/the-french-dispatch/" class="movie-list-item-button">Watch</a>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/asteroid.jpg" alt="">
+                                <span class="movie-list-item-title">Asteroid city</span>
+                                <p class="movie-list-item-desc">World-changing events spectacularly disrupt the itinerary of a Junior Stargazer/Space Cadet convention in an American desert town circa 1955.</p>
+                                <a href="https://letterboxd.com/film/asteroid-city/" class="movie-list-item-button">Watch</a>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/hereditary.jpg" alt="">
+                                <span class="movie-list-item-title">Hereditary</span>
+                                <p class="movie-list-item-desc">After her mother passes away, Annie and the rest of the family are grief-stricken. Soon, strange things start occurring and the horrifying truth about Annie's ancestry begins to come to light.</p>
+                                <a href="https://letterboxd.com/film/hereditary/" class="movie-list-item-button">Watch</a>
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+                <div class="movie-list-container">
+                    <h1 class="movie-list-title" id="watchlist">My WatchList</h1>
+                    <div class="movie-list-wrapper">
+                        <div class="movie-list">
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/holdovers.jpg" alt="">
+                                <span class="movie-list-item-title">The holdovers</span>
+                                <p class="movie-list-item-desc">A curmudgeonly instructor at a New England prep school remains on campus during Christmas break to babysit a handful of students with nowhere to go. He soon forms an unlikely bond with a brainy but damaged troublemaker, and with the school's head cook, a woman who just lost a son in the Vietnam War.</p>
+                                <a href="https://letterboxd.com/film/the-holdovers/" class="movie-list-item-button">Watch</a>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/saltburn.jpg" alt="">
+                                <span class="movie-list-item-title">Saltburn</span>
+                                <p class="movie-list-item-desc">Troubled by his classmate's unfortunate living situation, wealthy Oxford student Felix invites Oliver to stay at his estate, but a series of horrifying events soon engulf his eccentric family.</p>
+                                <a href="https://letterboxd.com/film/saltburn/" class="movie-list-item-button">Watch</a>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/translation.jpg" alt="">
+                                <span class="movie-list-item-title">Lost in translation</span>
+                                <p class="movie-list-item-desc">An American actor Bob, lands in Tokyo for an ad film and ends up meeting Charlotte, who's left behind by her photographer husband. Gradually, the two discover a friend within each other.</p>
+                                <a href="https://letterboxd.com/film/lost-in-translation/" class="movie-list-item-button">Watch</a>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/perfect.jpg" alt="">
+                                <span class="movie-list-item-title">Perfect days</span>
+                                <p class="movie-list-item-desc">Hirayama feels content with his life as a toilet cleaner in Tokyo. Outside of his structured routine, he cherishes music on cassette tapes, reads books and takes photos. Through unexpected encounters, he reflects on finding beauty in the world.</p>
+                                <a href="https://letterboxd.com/film/perfect-days-2023/" class="movie-list-item-button">Watch</a>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/apocalypse.jpg" alt="">
+                                <span class="movie-list-item-title">Apocalypse Now</span>
+                                <p class="movie-list-item-desc">A US Army officer serving in Vietnam is asked to kill a rogue colonel who has established himself as a god among the tribals in Cambodia.</p>
+                                <a href="https://letterboxd.com/film/apocalypse-now/" class="movie-list-item-button">Watch</a>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/strangers.jpg" alt="">
+                                <span class="movie-list-item-title">All of us strangers</span>
+                                <p class="movie-list-item-desc">One night in his near-empty London tower block, screenwriter Adam has a chance encounter with mysterious neighbor Harry, puncturing the rhythm of his everyday life. As a relationship develops between them, Adam finds himself drawn back to his childhood home, where his parents appear to be living just as they were on the day they died 30 years ago.</p>
+                                <a href="https://letterboxd.com/film/all-of-us-strangers/" class="movie-list-item-button">Watch</a>
+                            </div>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/memento.jpg" alt="">
+                                <span class="movie-list-item-title">Memento</span>
+                                <p class="movie-list-item-desc">Leonard Shelby, an insurance investigator, suffers from anterograde amnesia and uses notes and tattoos to hunt for the man he thinks killed his wife, which is the last thing he remembers.</p>
+                                <a href="https://letterboxd.com/film/memento/" class="movie-list-item-button">Watch</a>
+                            </div>
+                        </div>
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Floating Mail Icon -->
+    <div class="mail-icon">
+        <i class="fas fa-envelope"></i>
+    </div>
+        <!-- Floating Contact Form -->
+    <div class="contact-form-overlay" id="contactFormOverlay">
+        <div class="contact-form-popup">
+            <h2>¡Recomienda una película!</h2>
+            <form action="https://formsubmit.co/c8e20ea93cbfb447987dc98dccedeb06" method="POST" onsubmit="showThankYouMessage(event)">
+                <label for="email">Mail:</label>
+                <input type="email" name="email" id="email" required placeholder="Ingrese su mail">
+                    
+                <label for="message">Mensaje:</label>
+                <textarea name="message" id="message" rows="4" required placeholder="Ingrese su mensaje"></textarea>
+                    
+                <button type="submit">Enviar</button>
+                <button type="button" onclick="closeForm()">Cerrar</button>
+            </form>
+            <!-- Thank You Message -->
+            <div id="thankYouMessage" style="display: none; text-align: center; color: rgb(166, 36, 36); margin-top: 0px;">
+                ¡Gracias por su recomendación!
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

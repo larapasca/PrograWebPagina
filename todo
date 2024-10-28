@@ -1,0 +1,11 @@
+hacer otra pagina (merch,reviews?)
+hacer que los botones tengan algo en hover mode
+
+- agregar favoritos y sacarlas de un json --> mentira, rating de estrellitas con local storage DONE
+- mandar algo x mail??? formsubmit.co --> recomendaciones de pelis DONE
+
+consultas:
+sticky vs z-index --> Ninguna es mala practica
+margen toggle --> ta bien
+modo feo diurno colores --> white
+glitch text-decoration --> dejar pasar
