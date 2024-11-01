@@ -303,7 +303,8 @@ body{
     transform: translateX(-20px);
 }
 
-/* Pantalla otra */
+
+/* Pantalla celu */
 @media only screen and (max-width:750px){
     .menu-container{
         display: none;

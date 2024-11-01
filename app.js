@@ -66,7 +66,6 @@ menuItems.forEach(item => {
 });
 
 
-
 // Estrellas - local storage
 const starRatings = document.querySelectorAll(".star-rating");
 
