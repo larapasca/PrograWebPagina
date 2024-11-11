@@ -76,7 +76,6 @@ starRatings.forEach((starRating) => {
     // carga el rating guardado
     const savedRating = localStorage.getItem(movieId);
     if (savedRating) {
-        // Set the active class for the saved rating
         stars.forEach((star, index) => {
             if (index < savedRating) {
                 star.classList.add("active");
